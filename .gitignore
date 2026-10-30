@@ -1,0 +1,10 @@
+.venv/
+build/
+dist/
+release/
+__pycache__/
+*.spec
+TDM-1.0.1/
+.env
+.env.*
+!.env.example
