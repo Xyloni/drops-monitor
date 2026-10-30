@@ -19,12 +19,11 @@
 ## Features
 
 - Sign in to Twitch with a device code.
-- Import Twitch accounts from a TXT file in `email:login:password:oauth_token:user_ID:device_ID` format.
+- Import accounts from TXT as a full `email:login:password:oauth_token:user_ID:device_ID` row, a `login:oauth_token` row, or one OAuth token per line.
 - Validate account tokens with Twitch and check available Drops campaigns and reward progress.
 - View progress grouped by campaign, with reward claim status and game artwork when Twitch provides it.
 - Recheck accounts with incomplete or undiscovered Drops.
 - Choose how many accounts to check in parallel (1–30).
-- Sign in through Twitch device authorization when available.
 
 ## Getting started
 
@@ -33,7 +32,7 @@
 3. Select a TXT file with one account per line.
 4. Use the campaign filter and **Recheck** button to review current results.
 
-The app processes imported accounts on your computer. Passwords and the other TXT fields are discarded; OAuth tokens are kept in memory only while the app is running. Close and reopen the app, then import the file again to reconnect accounts.
+The app processes imported accounts on your computer. It does not save account data, passwords, or OAuth tokens to disk; tokens stay in memory only while the app is running. The import concurrency preference is stored locally. Close and reopen the app, then import the file again to reconnect accounts.
 
 ## Build from source
 
@@ -63,7 +62,7 @@ The executable is written to `dist/DropsMonitor.exe`. Build output and local vir
 ## Возможности
 
 - Вход в Twitch по коду устройства.
-- Импорт аккаунтов Twitch из TXT в формате `email:login:password:oauth_token:user_ID:device_ID`.
+- Импорт аккаунтов из TXT: полная строка `email:login:password:oauth_token:user_ID:device_ID`, строка `login:oauth_token` или один OAuth-токен на строке.
 - Проверка OAuth-токенов через Twitch и получение доступных кампаний Drops и прогресса наград.
 - Просмотр прогресса по кампаниям, статусов получения наград и обложек игр, если Twitch их предоставляет.
 - Повторная проверка аккаунтов с незавершёнными или не найденными Drops.
@@ -77,7 +76,7 @@ The executable is written to `dist/DropsMonitor.exe`. Build output and local vir
 3. Выберите TXT-файл, где каждый аккаунт находится на отдельной строке.
 4. Используйте фильтр кампаний и кнопку **Перепроверить**, чтобы обновить результаты.
 
-Импорт обрабатывается на вашем компьютере. Пароль и остальные поля TXT отбрасываются; OAuth-токены хранятся только в памяти, пока приложение запущено. После перезапуска импортируйте файл заново.
+Импорт обрабатывается на вашем компьютере. Данные аккаунта, пароль и OAuth-токен не сохраняются на диск: токен находится только в памяти, пока приложение запущено. Локально сохраняется только настройка параллельности импорта. После перезапуска импортируйте файл заново.
 
 ## Сборка из исходников
 
