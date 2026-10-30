@@ -27,7 +27,7 @@
 
 ## Getting started
 
-1. Download `DropsMonitor-v1.0.exe` from the project's Releases page.
+1. Build the application using the instructions below, or download a packaged executable if one is available on the project's Releases page.
 2. Start the application and open **Import accounts**.
 3. Select a TXT file with one account per line.
 4. Use the campaign filter and **Recheck** button to review current results.
@@ -74,7 +74,7 @@ Device authorization requires a Twitch Client ID. The current build uses the pub
 
 ## Быстрый старт
 
-1. Скачайте `DropsMonitor-v1.0.exe` со страницы Releases проекта.
+1. Соберите приложение по инструкции ниже или скачайте готовый EXE со страницы Releases, если он там опубликован.
 2. Запустите приложение и нажмите **Импорт аккаунтов**.
 3. Выберите TXT-файл, где каждый аккаунт находится на отдельной строке.
 4. Используйте фильтр кампаний и кнопку **Перепроверить**, чтобы обновить результаты.
