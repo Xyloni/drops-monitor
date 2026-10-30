@@ -18,6 +18,7 @@
 
 ## Features
 
+- Sign in to Twitch with a device code.
 - Import Twitch accounts from a TXT file in `email:login:password:oauth_token:user_ID:device_ID` format.
 - Validate account tokens with Twitch and check available Drops campaigns and reward progress.
 - View progress grouped by campaign, with reward claim status and game artwork when Twitch provides it.
@@ -61,6 +62,7 @@ The executable is written to `dist/DropsMonitor.exe`. Build output and local vir
 
 ## Возможности
 
+- Вход в Twitch по коду устройства.
 - Импорт аккаунтов Twitch из TXT в формате `email:login:password:oauth_token:user_ID:device_ID`.
 - Проверка OAuth-токенов через Twitch и получение доступных кампаний Drops и прогресса наград.
 - Просмотр прогресса по кампаниям, статусов получения наград и обложек игр, если Twitch их предоставляет.
