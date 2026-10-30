@@ -98,7 +98,7 @@ class TwitchBridge:
                     state=drop.get("self") or {}; reqmin=drop.get("requiredMinutesWatched",0); mins=state.get("currentMinutesWatched",0)
                     camp_drops.append({"name":drop.get("name","Награда"),"pct":min(100,round(mins*100/reqmin)) if reqmin else (100 if state.get("isClaimed") else 0),"claimed":state.get("isClaimed",False),"minutes":mins,"required":reqmin})
                 if camp_drops:
-                    pct=round(sum(d["pct"] for d in camp_drops)/len(camp_drops))
+                    pct=sum(d["pct"] for d in camp_drops)/len(camp_drops)
                     game,art=game_map.get(camp.get("id"),("Twitch Drops",""))
                     out.append({"campaign":camp.get("name") or camp.get("id","Twitch Drops"),"game":game,"art":art,"drops":camp_drops,"pct":pct,"claimed":all(d["claimed"] for d in camp_drops)})
             return out
