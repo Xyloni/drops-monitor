@@ -47,10 +47,6 @@ pip install -r requirements.txt
 
 The executable is written to `dist/DropsMonitor.exe`. Build output and local virtual environments are excluded from Git.
 
-## Twitch authorization note
-
-Device authorization requires a Twitch Client ID. The current build uses the public Twitch TV client ID referenced by TDM for device login. For a distributed release, register a dedicated **Public** Twitch application and use its Client ID. Never publish a Client Secret inside a desktop app.
-
 ---
 
 <div align="center">
@@ -93,10 +89,6 @@ pip install -r requirements.txt
 ```
 
 EXE появится в `dist/DropsMonitor.exe`. Сборочные файлы и локальное виртуальное окружение не включаются в Git.
-
-## Вход через Twitch
-
-Для device authorization нужен Twitch Client ID. Текущая сборка использует публичный Client ID Twitch TV-клиента, указанный в проекте TDM для входа по коду устройства. Для публичного релиза зарегистрируйте отдельное Twitch-приложение типа **Public** и укажите его Client ID. Не помещайте Client Secret в desktop-приложение.
 
 ---
 
